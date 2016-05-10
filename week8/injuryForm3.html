@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<!-- Bottstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	
+	<link rel="stylesheet" href="css/fancyform-min.css">
+
+	<!-- JQUERY must be first -->
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+
+<!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"> </script>
+	<script src="js/form.js"></script>
+	<script src="js/fancyform-min.js"></script>
+</head>
+<body>
+
+<div class="container">
+	<div id="injuryForm2">
+		<ul class="list-group">
+			<li class="list-group-item active">Describe Your Injury</li>
+			<li class="list-group-item">
+				<label for="" id="firstQ">
+					<span>Age</span>
+					<input type="text" name="age">
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="secondQ">
+					<span>Gender</span>
+					<input type="radio" name="gender" value="male" checked> Male
+  					<input type="radio" name="gender" value="female"> Female
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="thirdQ">
+					<span>Sport</span>
+					<select name="sport" id="">
+						<option value=""></option>
+					</select>
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="fourthQ">
+					<span>Activity</span>
+					<!-- select -->
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="fifthQ">
+					<span>level of Pain</span>
+					<!-- radio -->
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="sixthQ">
+					<span>Pain Type</span>
+					<!-- checkbox -->
+					<!-- dont forget to grid -->
+				</label>
+			</li>
+			<li class="list-group-item">
+				<label for="" id="seventhQ">
+					<span>Symptoms</span>
+					<!-- checkbox -->
+					<!-- dont forget to grid -->
+				</label>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+ 
+
+<!--  Below are the lists of sports and activities I created. This format was created for the fancy form library but we wont be working with that. Look up how to create a select form list on W3 schools or something. The main data to focus on are the words after sport in the first list ("Archery", "Airsoft", etc.) and activity in the second list. -->
+
+<!-- 	var sportData = [
+        {index: 0, key: "ARCH", sport: "Archery"},
+        {index: 1, key: "AIR", sport: "Airsoft"},
+        {index: 2, key: "BAD", sport: "Badmiton"},
+        {index: 3, key: "BASE", sport: "Baseball"},
+        {index: 4, key: "BASK", sport: "Basektball"},
+        {index: 5, key: "BIK", sport: "Biking"},
+        {index: 6, key: "BMX", sport: "BMX"},
+        {index: 7, key: "BOULD", sport: "Bouldering"},
+        {index: 8, key: "BOWL", sport: "Bowling"},
+        {index: 9, key: "BOX", sport: "Boxing"},
+        {index: 10, key: "CAN", sport: "Canoeing"},
+        {index: 11, key: "CROSS", sport: "Crossfit"},
+        {index: 12, key: "CYC", sport: "Cycling"},
+        {index: 13, key: "DANC", sport: "Dancing"},
+        {index: 14, key: "DIV", sport: "Diving"},
+        {index: 15, key: "FEN", sport: "Fencing"},
+        {index: 16, key: "FIELD", sport: "Field Hockey"},
+        {index: 17, key: "FIG", sport: "Figure Skating"},
+        {index: 18, key: "FISH", sport: "Fishing"},
+        {index: 19, key: "FOOT", sport: "Football"},
+        {index: 20, key: "FREE", sport: "Free Diving"},
+        {index: 21, key: "GOLF", sport: "Golf"},
+        {index: 22, key: "GYM", sport: "Gymnastics"},
+        {index: 23, key: "HOCK", sport: "Hockey"},
+        {index: 24, key: "HORSE", sport: "Horseback Riding"},
+        {index: 25, key: "HUR", sport: "Hurdling"},
+        {index: 26, key: "ICE", sport: "Ice Skating"},
+        {index: 27, key: "JOG", sport: "Jogging"},
+        {index: 28, key: "JU", sport: "Jujutsu"},
+        {index: 29, key: "KA", sport: "Karate"},
+        {index: 30, key: "KY", sport: "Kayaking"},
+        {index: 31, key: "KICK", sport: "Kickboxing"},
+        {index: 32, key: "KITE", sport: "Kitesurfing"},
+        {index: 33, key: "KNEE", sport: "Kneeboarding"},
+        {index: 34, key: "LAC", sport: "Lacrosse"},
+        {index: 35, key: "LONG", sport: "Longboarding"},
+        {index: 36, key: "MART", sport: "Martial Arts"},
+        {index: 37, key: "MOTO", sport: "Motocross"},
+        {index: 38, key: "MOUNT", sport: "Mountain Biking"},
+        {index: 39, key: "MUAY", sport: "Muay Thai"},
+        {index: 40, key: "PARK", sport: "Parkour"},
+        {index: 41, key: "POLO", sport: "Pole"},
+        {index: 42, key: "RACQ", sport: "Raquetball"},
+        {index: 43, key: "RODEO", sport: "Rodeo"},
+        {index: 44, key: "ROL", sport: "Roller Skating"},
+        {index: 45, key: "RUG", sport: "Ruby"},
+        {index: 46, key: "RUN", sport: "Running"},
+        {index: 47, key: "SKATE", sport: "Skateboarding"},
+        {index: 48, key: "SKII", sport: "Skiing"},
+        {index: 49, key: "SNOW", sport: "Snowboarding"},
+        {index: 50, key: "SURF", sport: "Surfing"},
+        {index: 51, key: "SOFT", sport: "Softball"},
+        {index: 52, key: "SWIM", sport: "Swimming"},
+        {index: 53, key: "TEN", sport: "Tennis"},
+        {index: 54, key: "TRACK", sport: "Track & Field"},
+        {index: 55, key: "VOL", sport: "Volleyball"},
+        {index: 56, key: "WAKE", sport: "Wakeboarding"},
+        {index: 57, key: "WAT", sport: "Water Polo"},
+        {index: 58, key: "WATER", sport: "Water Skiing"},
+        {index: 59, key: "WEIGHT", sport: "Weight Lifting"},
+        {index: 60, key: "WREST", sport: "Wrestling"},
+        {index: 61, key: "YOG", sport: "Yoga"},
+        {index: 62, key: "OTHER", activity: "Other"}
+
+        ];
+
+    var activityData = [
+        {index: 0, key: "RUN", activity: "Running"},
+        {index: 1, key: "JUMP", activity: "Jumping"},
+        {index: 2, key: "WALK", activity: "Walking"},
+        {index: 3, key: "SWIM", activity: "Swimming"},
+        {index: 4, key: "SIT", activity: "Sitting"},
+        {index: 5, key: "SKIP", activity: "Skipping"},
+        {index: 6, key: "RIDE", activity: "Riding"},
+        {index: 7, key: "LIFT", activity: "Lifting"},
+        {index: 8, key: "BOARD", activity: "Boarding"},
+        {index: 9, key: "FALLF", activity: "Falling Forward"},
+        {index: 10, key: "FALLB", activity: "Falling Backward"},
+        {index: 11, key: "FALLS", activity: "Falling Sideways"},
+        {index: 12, key: "SWING", activity: "Swinging"},
+        {index: 13, key: "THROW", activity: "Throwing"},
+        {index: 14, key: "STRETCH", activity: "Stretching"},
+        {index: 15, key: "KICK", activity: "Kicking"},
+        {index: 16, key: "PUNCH", activity: "Punching"},
+        {index: 17, key: "TUMB", activity: "Tumbling"},
+        {index: 18, key: "FLIP", activity: "Flipping"},
+        {index: 19, key: "LAND", activity: "LANDING"},
+        {index: 20, key: "OTHER", activity: "Other"}
+        ]; -->
+
+
+</body>
+</html>

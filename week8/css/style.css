@@ -1,0 +1,475 @@
+a.navbar-brand >img{
+	height:100%;
+}
+
+a.navbar-brand{
+	padding:0;
+}
+
+.navbar-custom .navbar-nav>li>a{
+	color:#a09f9f;
+}
+
+.navbar-collapse>.nav>li>a:focus, .navbar-collapse>.nav>li>a:hover{
+	background-color:white;
+}
+
+.navbar-custom .navbar-nav>li>a:hover, .navbar-custom .navbar-nav>li>a:focus,.navbar-custom .navbar-nav>.active>a, .navbar-custom .navbar-nav>.active>a:focus, .navbar-custom .navbar-nav>.active>a:hover {
+    bacgkround-color:white;
+	color:#aa0e3b;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+    background-color:white;
+}
+
+.input-group .form-control:nth-child(2){
+	margin:0 !important;
+}
+
+#showSign,#showLog{
+    margin-top: .7em !important;
+    padding: .6em;
+}
+
+
+.input-group{
+	padding-top:.5em;
+}
+
+#signup{
+	margin-top:.5em;
+}
+
+#signOut{
+	margin-top:.75em;
+	margin-left:.5em;
+	padding:.5em;
+}
+
+.input-group .form-control:nth-child(2){
+	margin-top:1em;
+}
+
+.ui-helper-hidden-accessible { 
+	display:none !important; 
+}
+
+.ui-autocomplete {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  float: left;
+  display: none;
+  min-width: 160px;
+  _width: 160px;
+  padding: 4px 0;
+  margin: 2px 0 0 0;
+  list-style: none;
+  background-color: #ffffff;
+  border-color: #ccc;
+  border-color: rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-width: 1px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  *border-right-width: 2px;
+  *border-bottom-width: 2px;
+ }
+
+  .ui-menu-item > a.ui-corner-all {
+    display: block;
+    padding: 3px 15px;
+    clear: both;
+    font-weight: normal;
+    line-height: 18px;
+    color: #555555;
+    white-space: nowrap;
+}
+  .ui-state-hover, &.ui-state-active {
+      color: #ffffff;
+      text-decoration: none;
+      background-color: #0088cc;
+      border-radius: 0px;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      background-image: none;
+ 
+}
+
+.welcome{
+	/*color:#aa0e3b;*/
+	padding-top:1em;
+}
+
+.athlete>img{
+	/*max-height:100%;*/
+	max-width:100%;
+}
+
+
+
+.landing{
+	background-image: url('../img/injury2.jpg');
+	background-repeat: no-repeat;
+    background-position: left;
+    background-size:auto;
+    padding:5em;
+    background-color:#75cccc;
+}
+
+.Landing>img{
+	margin-top:1em;
+	height:3em;
+}
+
+.Landing>button{
+	text-align:Center;
+	background-color:#75cccc;
+	border:1px solid white;
+	border-radius:0;
+	color:#ab1d3e;
+	margin-top:1em;
+	margin-bottom:2em;
+}
+
+.Landing>button:hover{
+	color:white;
+}
+ 
+p.white{
+	margin-top:1em;
+}
+.white{
+	color:white;
+	text-align:center;
+}
+
+.athlete{
+	padding:2em;
+}
+
+.infoList>h2,.about{
+	color:#ab1d3e;
+	font-size:1.25em;
+	text-align:center;
+}
+
+.common>h2{
+	color:#ab1d3e;
+	font-size:1.25em;
+}
+
+.common>ul>li{
+	list-style:none;
+	color:#75cccc;
+	padding-top:.5em;
+}
+
+.common>ul{
+	padding-left:0;
+}
+
+.about{
+	padding:2em 4em 2em 4em;
+}
+
+
+/*.block{
+	margin-left: auto;
+	margin-right: auto;
+	height:4em;
+	width:4em;
+	background-color:white;
+	text-align:center;
+	margin-top:2em;
+	border-radius:10%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+
+.block>p{
+	color:#a09f9f;
+	padding:.25em;
+	font-size:2em;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}*/
+
+/*.active>.block>p{
+	color:#ab1d3e;
+}*/
+
+.steps{
+	background-color:#75cccc;
+	/*background-color:#00B8C1;*/
+	padding-top:.75em;
+	padding-bottom:.8em;
+}
+
+.dash-box{
+	background-color:#75cccc;
+	border:2px solid #bef4f1;
+	border-radius:5%;
+	width:80%;
+}
+
+.dash-link>img{
+	width:5em;
+	display:block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dash-link>img:hover{
+	opacity:.5;
+    filter: alpha(opacity=50);
+}
+
+.dash-box>p{
+	text-align:center;
+	/*padding-top:1.5em;*/
+	padding-bottom:.5em;
+	color:white;
+}
+
+.content{
+	padding-top:1em;
+}
+
+.anounce{
+	/*width:40%;*/
+	/*margin-left: auto;
+	margin-right: auto;*/
+	padding-top:1em;
+}
+
+.vertContent>.list-group-item.active, .vertContent>.list-group-item.active:focus, .vertContent>.list-group-item.active:hover{
+	background-color:#00b8c1;
+	border:none;
+}
+
+.toggle{
+	text-align:center;
+	padding:0 1em 1em 1em;
+	color:#a09f9f;
+}
+
+.toggle a{
+	padding:1em;
+	color:#a09f9f;
+}
+
+.toggle a:hover, .toggle a:active, .toggle a:focus{
+	color:#ab1d3e;
+	text-decoration:none;
+}
+
+a.active{
+	color:#ab1d3e;
+}
+
+.bodyContainer{
+	max-height: 100vh;
+}
+
+.bodyPart{
+	width:20em;
+	margin-left: auto;
+	margin-right: auto;
+}
+.humanFront,.bodyPart{
+/*	max-height:auto;
+	max-width:auto;*/
+	margin-left: auto;
+	margin-right: auto;
+	height:80vh;
+}
+
+.select:hover, .select:active, .select:focus{
+    fill: #AA1D3D;
+}
+
+.ask{
+	padding:2em;
+	margin-top:-4em;
+}
+
+svg{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.formContain{
+	width:100%;
+}
+
+.list-group-item.active{
+	background-color:#00b8c1 !important;
+	border-color:#00b8c1 !important;
+}
+
+.btnSub {
+	background-color: #76CBCC !important;
+	border-color: #76CBCC !important;
+	color:white;
+}
+
+.list-group-item>p{
+	color:#0E9A9C !important;
+}
+
+div#injuryForm {
+	margin-top: 1em;
+}
+
+label{
+	font-weight:300 !important;
+}
+
+.diagnosis{
+	padding:1em 0 1em 0;
+}
+.diagnosis>.container>ul>li> h1{
+	font-size:1.5em;
+	margin:0;
+
+}
+
+.diagnosis>.container>ul>li>span>h2{
+	font-size:1.25em;
+	color:#AA1D3D;
+	margin:.5em;
+}
+
+.tab-pane>h3{
+	font-size:1em;
+	color:#AA1D3D;
+	padding-top:1em;
+}
+
+.nav-tabs{
+	padding-top:1em;
+}
+
+.nav-tabs>li>a:hover,.nav-tabs>li>a:focus{
+	color:white;
+}
+
+.nav-tabs>li>a{
+	color:black;
+}
+
+.profSegs>.nav>li>a:hover{
+	background-color:#75cccc !important;
+}
+.nav-tabs>li.active>a:hover{
+	background-color:white !important;
+}
+
+.diagImg{
+	max-width:90%;
+}
+
+a.white{
+	color:white;
+	text-decoration:none;
+}
+
+a.white:hover{
+	text-decoration:none;
+	color:white;
+}
+
+.circProf{
+	text-align:center;
+}
+.profImg{
+	width:50%;
+	border-radius:100%;
+	padding:1em;
+}
+
+.vertCol{
+	padding-top:1em;
+}
+
+.vertColCont{
+	padding:1em;
+}
+
+.vertColCont>ul>li>a{
+	text-decoration:none;
+	color:black;
+}
+
+
+
+footer{
+	padding:3em 1em 1em 1em;
+	text-align:center;
+	background-color:#75cccc;
+	color:white;
+}
+
+
+@media(max-width:1000px) {
+	.vertContent{
+		display:none;
+	}
+	.ask{
+		margin-top:-4em;
+	}
+}
+
+
+@media(max-width:700px) {
+	#showSign, #showLog {
+    margin-left: 1em !important;
+
+	}
+
+	.comm,.dash-box>p,footer{
+		display:none !important;
+	}
+
+	.dash-box{
+		border:none;
+	}
+
+	.bodyPart{
+		height:70vh;
+
+	}
+
+
+	.rightLegSvg{
+		height:400px;
+		margin-left:50px;
+	}
+}
+
+@media(max-width:425px) {
+.frontBodyMain{
+		margin-top:-4em;
+	}
+.ask{
+		margin-top:-11em;
+	}
+}
+

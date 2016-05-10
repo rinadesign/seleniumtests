@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>practice</title>
+<!-- Bottstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/form.js"></script>
+
+</head>
+<body>
+<div class="container">
+	<form id="injuryForm3">
+	  	<div id="questions_wrapper list-group">
+		    <div class="list-group-item active">
+		    	Describe your Injury
+		    </div>
+		    <div class="list-group-item">
+		    	<p>Age</p>
+		    	<div>
+		    		<input type="text" name="age" id="a_0">
+		    	</div>
+		    </div>
+		    <div class="list-group-item">
+		    	<p>Gender</p>
+		    	<div>
+		    		<input type="radio" name="gender" value="male" id="a_1" checked> 
+		    		<label for="b_0">Male</label>
+		    				<input type="radio" name="gender" value="female" id="a_2">
+		    				<label for="b_1">Female</label>
+		    	</div>
+		    </div>
+			    <!-- <p>Level of Pain</p>
+			    <div>
+			      <input type="radio" required="" name="q_2" value="1" id="c_0">
+			      <label for="c_0">1</label>
+			      <input type="radio" required="" name="q_2" value="2" id="c_1">
+			      <label for="c_1">2</label>
+			      <input type="radio" required="" name="q_2" value="3" id="c_2">
+			      <label for="c_2">3</label>
+			      <input type="radio" required="" name="q_2" value="4" id="c_3">
+			      <label for="c_3">4</label>
+			      <input type="radio" required="" name="q_2" value="5" id="c_4">
+			      <label for="c_4">5</label>
+			      <input type="radio" required="" name="q_2" value="6" id="c_5">
+			      <label for="c_5">6</label>
+			      <input type="radio" required="" name="q_2" value="7" id="c_6">
+			      <label for="c_6">7</label>
+			      <input type="radio" required="" name="q_2" value="8" id="c_7">
+			      <label for="c_7">8</label>
+			      <input type="radio" required="" name="q_2" value="9" id="c_8">
+			      <label for="c_8">9</label>
+			      <input type="radio" required="" name="q_2" value="10" id="c_9">
+			      <label for="c_9">10</label>
+			    </div> -->
+		
+		    <div class="list-group-item">
+		    	<div class="question range">
+		    	  <label for="a_3">Level of Pain</label><br>
+		    	  <p class="pull-left">1</p> <p class="pull-right">10</p>
+		    	  <input type="range" required="" name="pain" id="a_3" min="0" max="10" step="1" list="pain_dl">
+		    	  
+		    	  <datalist id="pain_dl">
+		    	    <option value="0"></option>
+		    	    <option value="1"></option>
+		    	    <option value="2"></option>
+		    	    <option value="3"></option>
+		    	    <option value="4"></option>
+		    	    <option value="5"></option>
+		    	    <option value="6"></option>
+		    	    <option value="7"></option>
+		    	    <option value="8"></option>
+		    	    <option value="9"></option>
+		    	    <option value="10"></option>
+		    	  </datalist>
+		    	 
+		    	</div>
+		    </div>
+		    <div class="list-group-item">
+		    	<p>Sport</p>
+		    	<div>
+		    		<select name="sport" id="a_4">
+		    			<option value="Archery">Archery</option>
+		    	                <option value="Airsoft">Airsoft</option>
+		    	                <option value="Badmiton">Badmiton</option>
+		    	                <option value="Baseball">Baseball</option>
+		    	                <option value="Basektball">Basektball</option>
+		    	                <option value="Biking">Biking</option>
+		    	                <option value="BMX">BMX</option>
+		    	                <option value="Bouldering">Bouldering</option>
+		    	                <option value="Bowling">Bowling</option>
+		    	                <option value="Boxing">Boxing</option>
+		    	                <option value="Canoeing">Canoeing</option>
+		    	                <option value="Crossfit">Crossfit </option>
+		    	                <option value="Cycling">Cycling </option>
+		    	                <option value="Dancing">Dancing </option>
+		    	                <option value="Diving">Diving  </option>
+		    	                <option value="Field Hockey">Field Hockey </option>
+		    	                <option value="Figure Skating">Figure Skating </option>
+		    	                <option value="Fishing">Fishing </option>
+		    	                <option value="Football">Football </option>
+		    	                <option value="Free Diving">Free Diving </option>
+		    	                <option value="Golf">Golf </option>
+		    	                <option value="Gymnastics">Gymnastics </option>
+		    	                <option value="Hockey">Hockey </option>
+		    	                <option value="Horseback Riding">Horseback Riding </option>
+		    	                <option value="Ice Skating">Ice Skating </option>
+		    	                <option value="Jogging">Jogging </option>
+		    	                <option value="Jujutsu">Jujutsu </option>
+		    	                <option value="Karate">Karate </option>
+		    	                <option value="Kayaking">Kayaking </option>
+		    	                <option value="Kickboxing">Kickboxing </option>
+		    	                <option value="Kitesurfing">Kitesurfing </option>
+		    	                <option value="Kneeboarding">Kneeboarding </option>
+		    	                <option value="Lacrosse">Lacrosse </option>
+		    	                <option value="Longboarding">Longboarding </option>
+		    	                <option value="Martial Arts">Martial Arts </option>
+		    	                <option value="Motocross">Motocross </option>
+		    	                <option value="Mountain Biking">Mountain Biking </option>
+		    	                <option value="Muay Thai">Muay Thai </option>
+		    	                <option value="Pole">Pole </option>
+		    	                <option value="Raquetball">Raquetball </option>
+		    	                <option value="Rodeo">Rodeo </option>
+		    	                <option value="Roller Skating">Roller Skating </option>
+		    	                <option value="Ruby">Ruby </option>
+		    	                <option value="Running">Running </option>
+		    	                <option value="Skateboarding">Skateboarding </option>
+		    	                <option value="Skiing">Skiing </option>
+		    	                <option value="Snowboarding">Snowboarding </option>
+		    	                <option value="Surfing">Surfing </option>
+		    	                <option value="Softball">Softball </option>
+		    	                <option value="Swimming">Swimming </option>
+		    	                <option value="Tennis">Tennis </option>
+		    	                <option value="Track & Field">Track & Field </option>
+		    	                <option value="Volleyball">Volleyball </option>
+		    	                <option value="Wakeboarding">Wakeboarding </option>
+		    	                <option value="Water Polo">Water Polo </option>
+		    	                <option value="Water Skiing">Water Skiing </option>
+		    	                <option value="Weight Lifting">Weight Lifting </option>
+		    	                <option value="Wrestling">Wrestling </option>
+		    	                <option value="Yoga">Yoga </option>
+		    	                <option value="Other">Other </option>
+		    		</select>
+		    	</div>
+		    </div>
+		    <div class="list-group-item">
+		    	<p>Activity</p>
+		    	<div>
+		    		<select name="activity" id="a_5">
+		    			<option value="Running">Running</option>
+		    	                <option value="Jumping">Jumping</option>
+		    	                <option value="Walking">Walking</option>
+		    	                <option value="Swimming">Swimming</option>
+		    	                <option value="Sitting">Sitting</option>
+		    	                <option value="Skipping">Skipping</option>
+		    	                <option value="Riding">Riding</option>
+		    	                <option value="Lifting">Lifting</option>
+		    	                <option value="Boarding">Boarding</option>
+		    	                <option value="Falling Forward">Falling Forward</option>     
+		    	                <option value="Falling Backward">Falling Backward</option>
+		    	                <option value="Falling Sideways">Falling Sideways</option>
+		    	                <option value="Swinging">Swinging</option>
+		    	                <option value="Throwing">Throwing</option>
+		    	                <option value="Stretching">Stretching</option>     
+		    	                <option value="Kicking">Kicking</option>
+		    	                <option value="Punching">Punching</option>
+		    	                <option value="Tumbling">Tumbling</option>
+		    	                <option value="Flipping">Flipping</option>
+		    	                <option value="Landing">Landing</option>
+		    	                <option value="Other">Other</option>    
+		    		</select>
+		    	</div>
+		    </div>
+		    <div class="list-group-item">
+		    	<p>Pain Type</p>
+		    	<div class="row">
+		    	  <div class="col-sm-2 col-xs-4">
+		    	  	<input type="checkbox" name="painType" value="aching" id="a_6">
+		    	  	<label for="a_6">Aching</label>
+		    	  </div>
+		    	  <div class="col-sm-2 col-xs-4">
+		    	  	<input type="checkbox" name="painType" value="stabbing" id="a_7">
+		    	  	<label for="a_7">Stabbing</label>
+		    	  </div>
+		    	  <div class="col-sm-2 col-xs-4">
+		    	  	<input type="checkbox" name="painType" value="throbbing" id="a_8">
+		    	  	<label for="a_8">Throbbing</label>
+		    	  </div>
+		    	</div>
+		    </div>
+			<div class="list-group-item">
+				<p>Symptoms</p>
+				<div class="row">
+				    <div class="col-sm-2 col-xs-4">
+				    	<input type="checkbox" name="symptoms" value="Swollen" id="a_9">
+				    	<label for="a_9">Swollen</label>
+				    </div>
+				    <div class="col-sm-2 col-xs-4">
+				    	<input type="checkbox" name="symptoms" value="Bleeding" id="a_10">
+				    	<label for="a_10">Bleeding</label>
+				    </div>
+				    <div class="col-sm-2 col-xs-4">
+				    	<input type="checkbox" name="symptoms" value="Burning" id="a_11">
+				    	<label for="a_11">Burning</label>
+				    </div>
+				    <div class="col-sm-2 col-xs-4">
+				    	<input type="checkbox" name="symptoms" value="Redness" id="a_12">
+				    	<label for="a_12">Redness</label>
+				    </div>
+					<div class="col-sm-2 col-xs-4">
+				   	 <input type="checkbox" name="symptoms" value="Nausea" id="a_13">
+				   	<label for="a_13">Nausea</label>
+					</div>
+				    <div class="col-sm-2 col-xs-4">
+				    	<input type="checkbox" name="symptoms" value="Dizziness" id="a_14">
+				    	<label for="a_14">Dizziness</label>
+				    </div>
+					<div class="col-sm-2 col-xs-4">
+						<input type="checkbox" name="symptoms" value="Poor Vision" id="a_15">
+						<label for="a_15">Poor Vision</label>
+					</div>
+			      	<div class="col-sm-2 col-xs-4">
+			      		<input type="checkbox" name="symptoms" value="Fatigue" id="a_16">
+			      		<label for="a_16">Fatigue</label>
+			      	</div>
+			      	<div class="col-sm-2 col-xs-4">
+			      		<input type="checkbox" name="symptoms" value="Numbness" id="a_17">
+			      		<label for="a_17">Numbness</label>
+			      	</div>
+			    </div>
+			</div>
+			<div class="list-group-item">
+		    	<button id="btn btn-in" type="submit">Next</button>
+		    </div>
+	  	</div>
+	</form>
+</div>
+<div id="results_wrapper"></div>
+</div>
+</body>
+<script>
+	function setOrPush(target, val) {
+      var result = val;
+      if (target) {
+        result = [target];
+        result.push(val);
+      }
+      return result;
+    }
+
+    function getFormResults(formElement) {
+      var formElements = formElement.elements;
+      var formParams = {};
+      var i = 0;
+      var elem = null;
+      for (i = 0; i < formElements.length; i += 1) {
+        elem = formElements[i];
+        switch (elem.type) {
+          case 'submit':
+            break;
+          case 'radio':
+            if (elem.checked) {
+              formParams[elem.name] = elem.value;
+            }
+            break;
+          case 'checkbox':
+            if (elem.checked) {
+              formParams[elem.name] = setOrPush(formParams[elem.name], elem.value);
+            }
+            break;
+          default:
+            formParams[elem.name] = setOrPush(formParams[elem.name], elem.value);
+        }
+      }
+      return formParams;
+    }
+
+    //
+    // Boilerplate for running the snippet/form
+    //
+
+    function ok() {
+      var params = getFormResults(document.getElementById('injuryForm3'));
+      document.getElementById('results_wrapper').innerHTML = JSON.stringify(params, null, ' ');
+    }
+
+    (function() {
+      var injuryForm3 = document.getElementById('injuryForm3');
+      injuryForm3.addEventListener('submit', function(event) {
+        event.preventDefault();
+        ok();
+      }, false);
+    })();
+</script>
+
+</html>

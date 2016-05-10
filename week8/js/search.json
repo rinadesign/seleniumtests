@@ -1,0 +1,7 @@
+searchString=[
+		{"San Francisco", url:"http://www.google.com"},
+		{"San Jose", url:"http://www.facebook.com"},
+		{"San Carlos", url:"http://www.twitter.com"},
+		{"San Diego", url:"http://www.instagram.com"},
+		{"San Martin", url:"http://www.apple.com"},
+	];
